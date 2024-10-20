@@ -1,0 +1,150 @@
+.main__container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding: 3rem 10rem;
+  gap: 1rem;
+
+  @media (max-width: 600px) {
+    padding: 1rem 4rem;
+  }
+
+  @media (max-width: 950px) {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card__one {
+    background: url("../images/bg-pattern-quotation.svg") var(--clr-Moderateviolet) no-repeat 88% 0%;
+
+
+    @media (max-width: 375px) {
+      margin-top: 4.375rem;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 0;
+    }
+
+    .top__sec-card {
+      .img {
+        .avatar_img {
+          border: 2px solid hsl(265, 61, 69);
+        }
+      }
+    }
+  }
+
+  .card__two {
+    background-color: var(--clr-Verydarkgrayishblue);
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .card__three {
+    background-color: var(--clr-White);
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    .p-name {
+      color: var(--clr-Verydarkgrayishblue);
+    }
+
+    .p-discribe {
+      color: var(--clr-Verydarkgrayishblue);
+    }
+
+    .op__one {
+      color: var(--clr-Verydarkgrayishblue);
+
+    }
+
+    .op__two {
+      color: var(--clr-Verydarkgrayishblue);
+    }
+  }
+
+  .card__four {
+    background-color: var(--clr-Verydarkblackishblue);
+
+    .top__sec-card {
+      .img {
+        .avatar_img {
+          border: 2px solid hsl(279, 33, 41);
+        }
+      }
+    }
+  }
+
+
+  .card__five {
+    background-color: var(--clr-White);
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    .p-name {
+      color: var(--clr-Verydarkgrayishblue);
+    }
+
+    .p-discribe {
+      color: var(--clr-Verydarkgrayishblue);
+    }
+
+    .op__one {
+      color: var(--clr-Verydarkgrayishblue);
+    }
+
+    .op__two {
+      color: var(--clr-Verydarkgrayishblue);
+    }
+  }
+}
+
+
+
+
+
+.top__sec-card {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 0 17px 31px;
+}
+
+.card__one .p-name,
+.card__two .p-name,
+.card__four .p-name {
+  color: var(--clr-Lightgrayishblue);
+}
+
+.card__one .p-discribe,
+.card__two .p-discribe,
+.card__four .p-discribe {
+  color: var(--clr-Lightgrayishblue);
+  opacity: 0.5;
+}
+
+.p-discribe {
+  font-size: 11px;
+  opacity: 0.5;
+}
+
+.card__one .op__one,
+.card__two .op__one,
+.card__four .op__one {
+  color: var(--clr-White);
+
+}
+
+.card__one .op__two,
+.card__two .op__two,
+.card__four .op__two {
+  color: var(--clr-White);
+}
+
+.op__two {
+  opacity: 0.5;
+}

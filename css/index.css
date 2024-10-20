@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+:root {
+  --font-base: "Barlow Semi Condensed", sans-serif;
+  --clr-White: hsl(0, 0%, 100%);
+  --clr-Moderateviolet: hsl(263, 55%, 52%);
+  --clr-Verydarkgrayishblue: hsl(217, 19%, 35%);
+  --clr-Verydarkblackishblue: hsl(219, 29%, 14%);
+  --clr-Lightgray: hsl(0, 0%, 81%);
+  --clr-Lightgrayishblue: hsl(210, 46%, 95%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+body {
+  text-rendering: optimizeSpeed;
+  font-family: var(--font-base);
+  background-color: var(--clr-Lightgrayishblue);
+  font-size: 0.813rem;
+  overflow-x: hidden;
+}
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+.img {
+  width: 28px;
+}
+.img img {
+  border-radius: 50%;
+}
+.card__size {
+  border-radius: 10px;
+}
+.same-details-style {
+  margin: 0 0 0 1rem;
+}
+.same-name-style {
+  font-weight: 600;
+}
+.same-discribe-style {
+  font-weight: 500;
+}
+.op__one-same-margin-size {
+  padding: 0 0 0 31px;
+  max-width: 100%;
+  width: 95%;
+}
+.op__two-same-margin-size {
+  padding: 15px 0 30px 31px;
+  max-width: 100%;
+  width: 90%;
+}
+.text__op-one {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.text__card-two {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+@media (max-width: 768px) {
+  .card__size {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
